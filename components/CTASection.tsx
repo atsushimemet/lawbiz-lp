@@ -26,8 +26,10 @@ const CTASection = () => {
                 </p>
                 
                 <a 
-                  href="#" 
+                  href="https://lin.ee/jlYnS13V" 
                   className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-6"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="mr-2">📱</span>
                   友だち追加する
@@ -35,8 +37,12 @@ const CTASection = () => {
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <p className="text-sm text-gray-600 mb-2">QRコードでも追加可能</p>
-                  <div className="bg-gray-100 h-32 rounded-lg flex items-center justify-center text-gray-500">
-                    QRコード<br />（実装時に設置）
+                  <div className="bg-white h-32 rounded-lg flex items-center justify-center">
+                    <img 
+                      src="https://qr-official.line.me/gs/M_906lvrvs_GW.png?oat_content=qr" 
+                      alt="LINE友達追加QRコード"
+                      className="h-28 w-28 object-contain"
+                    />
                   </div>
                 </div>
               </div>

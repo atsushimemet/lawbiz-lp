@@ -94,8 +94,10 @@ const FAQSection = () => {
               LINEでお気軽にお問い合わせください。専門スタッフが丁寧にお答えします。
             </p>
             <a 
-              href="#contact" 
+              href="https://lin.ee/jlYnS13V" 
               className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="mr-2">💬</span>
               LINEで質問する

@@ -72,8 +72,10 @@ const Footer = () => {
               
               <div className="flex justify-center">
                 <a 
-                  href="#contact" 
+                  href="https://lin.ee/jlYnS13V" 
                   className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="mr-2">💬</span>
                   無料相談はこちら
