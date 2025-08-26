@@ -70,8 +70,10 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
-              href="#contact" 
+              href="https://lin.ee/jlYnS13V" 
               className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="mr-2">💬</span>
               LINEで無料相談

@@ -78,9 +78,10 @@ const Header = () => {
               </button>
             ))}
             <Link
-              href="#contact"
-              onClick={() => handleMenuClick('#contact')}
+              href="https://lin.ee/jlYnS13V"
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 text-sm"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               💬 無料相談
             </Link>
@@ -135,9 +136,10 @@ const Header = () => {
             ))}
             <div className="px-4 py-3">
               <Link
-                href="#contact"
-                onClick={() => handleMenuClick('#contact')}
+                href="https://lin.ee/jlYnS13V"
                 className="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 💬 無料相談
               </Link>

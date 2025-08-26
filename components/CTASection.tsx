@@ -26,8 +26,10 @@ const CTASection = () => {
                 </p>
                 
                 <a 
-                  href="#" 
+                  href="https://lin.ee/jlYnS13V" 
                   className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-6"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="mr-2">📱</span>
                   友だち追加する

@@ -112,8 +112,10 @@ const PricingSection = () => {
               {/* Button and note section */}
               <div className="mt-auto">
                 <a 
-                  href="#contact" 
+                  href="https://lin.ee/jlYnS13V" 
                   className="btn-primary w-full text-lg py-4 bg-red-600 hover:bg-red-700 mb-4 inline-block"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   今すぐ申し込む
                 </a>
