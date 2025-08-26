@@ -41,17 +41,23 @@ const HeroSection = () => {
           {/* Features */}
           <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
             <div className="bg-gray-50 p-6 rounded-xl border">
-              <div className="text-primary-600 text-2xl mb-3">📱</div>
+              <div className="bg-primary-100 text-primary-600 w-12 h-12 rounded-lg flex items-center justify-center text-sm font-bold mb-3 mx-auto">
+                SP
+              </div>
               <h3 className="font-semibold text-gray-900 mb-2">スマホ対応HP</h3>
               <p className="text-gray-600 text-sm">レスポンシブデザインで全デバイス対応</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border">
-              <div className="text-green-600 text-2xl mb-3">💬</div>
+              <div className="bg-green-100 text-green-600 w-12 h-12 rounded-lg flex items-center justify-center text-xs font-bold mb-3 mx-auto">
+                LINE
+              </div>
               <h3 className="font-semibold text-gray-900 mb-2">LINE問い合わせ導線</h3>
               <p className="text-gray-600 text-sm">自動応答システム付きで効率的</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border">
-              <div className="text-blue-600 text-2xl mb-3">🔍</div>
+              <div className="bg-blue-100 text-blue-600 w-12 h-12 rounded-lg flex items-center justify-center text-xs font-bold mb-3 mx-auto">
+                広告
+              </div>
               <h3 className="font-semibold text-gray-900 mb-2">Google広告運用代行</h3>
               <p className="text-gray-600 text-sm">初期設定から運用開始まで完全サポート</p>
             </div>
@@ -60,7 +66,8 @@ const HeroSection = () => {
           {/* Speed Note */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-10 max-w-md mx-auto">
             <p className="text-blue-800 font-medium">
-              ⚡ 最短1営業日で公開可能
+              <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs mr-2">FAST</span>
+              最短1営業日で公開可能
             </p>
             <p className="text-blue-600 text-sm mt-1">
               原稿・画像素材が揃っている場合
@@ -75,8 +82,8 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="mr-2">💬</span>
-              LINEで無料相談
+              <span className="bg-white text-green-600 px-2 py-1 rounded text-xs mr-3 font-bold">LINE</span>
+              無料相談
             </Link>
             <Link 
               href="#services" 

@@ -3,31 +3,41 @@ import React from 'react'
 const ServicesSection = () => {
   const services = [
     {
-      icon: "🌐",
+      iconBg: "bg-blue-100",
+      iconText: "WEB",
+      iconColor: "text-blue-600",
       title: "ホームページ作成（1ページ構成）",
       description: "事務所紹介・対応業務・料金目安・相談の流れ・FAQ・アクセス情報を含む完全なランディングページ",
       features: ["レスポンシブデザイン", "SEO最適化", "高速表示対応"]
     },
     {
-      icon: "💬",
+      iconBg: "bg-green-100",
+      iconText: "LINE",
+      iconColor: "text-green-600",
       title: "LINE導線の設置",
       description: "友だち追加ボタン・QRコード設置、自動応答での一次ヒアリング機能",
       features: ["自動応答設定", "ヒアリングテンプレート", "管理画面案内"]
     },
     {
-      icon: "📈",
+      iconBg: "bg-purple-100",
+      iconText: "ADS",
+      iconColor: "text-purple-600",
       title: "Google検索広告の代行",
       description: "アカウント初期設定、地域・キーワード設定、運用開始まで完全サポート",
       features: ["キーワード選定", "広告文作成", "地域ターゲティング"]
     },
     {
-      icon: "⚡",
+      iconBg: "bg-orange-100",
+      iconText: "FAST",
+      iconColor: "text-orange-600",
       title: "スピード公開",
       description: "原稿・画像素材提供後、最短1営業日で公開可能",
       features: ["迅速な対応", "品質チェック", "公開後サポート"]
     },
     {
-      icon: "✍️",
+      iconBg: "bg-indigo-100",
+      iconText: "EDIT",
+      iconColor: "text-indigo-600",
       title: "文章サポート",
       description: "専用ひな形に沿って記入いただければ、読みやすく整えます",
       features: ["原稿・画像ひな形提供", "文章校正", "専門用語の分かりやすい説明"]
@@ -52,7 +62,9 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
             <div key={index} className="card p-6">
-              <div className="text-3xl mb-4">{service.icon}</div>
+              <div className={`${service.iconBg} ${service.iconColor} w-12 h-12 rounded-lg flex items-center justify-center text-xs font-bold mb-4`}>
+                {service.iconText}
+              </div>
               <h3 className="font-semibold text-gray-900 mb-3 text-lg">
                 {service.title}
               </h3>
@@ -74,7 +86,7 @@ const ServicesSection = () => {
         {/* Additional Notes */}
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
           <h4 className="font-semibold text-amber-900 mb-3 flex items-center">
-            <span className="mr-2">ℹ️</span>
+            <span className="bg-amber-600 text-white px-2 py-1 rounded text-xs mr-2">INFO</span>
             ご注意事項
           </h4>
           <div className="space-y-2 text-sm text-amber-800">

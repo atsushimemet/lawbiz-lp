@@ -35,7 +35,8 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  🏢 会社概要・実績を見る
+                  <span className="bg-white text-primary-600 px-2 py-1 rounded text-xs mr-2 font-bold">WEB</span>
+                  会社概要・実績を見る
                 </a>
               </div>
             </div>
@@ -77,7 +78,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="mr-2">💬</span>
+                  <span className="bg-white text-green-600 px-2 py-1 rounded text-xs mr-2 font-bold">LINE</span>
                   無料相談はこちら
                 </a>
               </div>

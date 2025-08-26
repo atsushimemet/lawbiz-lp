@@ -3,17 +3,23 @@ import React from 'react'
 const ProblemsSection = () => {
   const problems = [
     {
-      icon: "📱",
+      iconBg: "bg-blue-100",
+      iconText: "SP",
+      iconColor: "text-blue-600",
       title: "ホームページが古くスマホで読みづらい",
       description: "レスポンシブ対応していない古いサイトでは、スマホユーザーの離脱率が高くなります"
     },
     {
-      icon: "📞",
+      iconBg: "bg-orange-100",
+      iconText: "TEL",
+      iconColor: "text-orange-600",
       title: "問い合わせが電話のみで機会損失",
       description: "若い世代は電話を敬遠する傾向があり、LINEなどの気軽な連絡手段が必要です"
     },
     {
-      icon: "🔍",
+      iconBg: "bg-purple-100",
+      iconText: "SEO",
+      iconColor: "text-purple-600",
       title: "Google検索で見つけてもらいにくい",
       description: "SEO対策や広告運用ができていないため、潜在顧客にリーチできていません"
     }
@@ -34,7 +40,9 @@ const ProblemsSection = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {problems.map((problem, index) => (
             <div key={index} className="card p-6 text-center">
-              <div className="text-4xl mb-4">{problem.icon}</div>
+              <div className={`${problem.iconBg} ${problem.iconColor} w-16 h-16 rounded-lg flex items-center justify-center text-sm font-bold mb-4 mx-auto`}>
+                {problem.iconText}
+              </div>
               <h3 className="font-semibold text-gray-900 mb-3 text-lg">
                 {problem.title}
               </h3>
