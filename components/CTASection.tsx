@@ -17,7 +17,9 @@ const CTASection = () => {
             {/* LINE Contact */}
             <div className="bg-white rounded-2xl p-8 text-gray-900">
               <div className="text-center">
-                <div className="text-green-600 text-5xl mb-4">💬</div>
+                <div className="bg-green-100 text-green-600 w-16 h-16 rounded-lg flex items-center justify-center text-sm font-bold mb-4 mx-auto">
+                  LINE
+                </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">
                   LINEで無料相談
                 </h3>
@@ -31,7 +33,7 @@ const CTASection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="mr-2">📱</span>
+                  <span className="bg-white text-green-600 px-2 py-1 rounded text-xs mr-3 font-bold">APP</span>
                   友だち追加する
                 </a>
 
@@ -53,34 +55,37 @@ const CTASection = () => {
               <h3 className="text-2xl font-bold mb-6">
                 LINEで相談するメリット
               </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">⭐</span>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <span className="bg-yellow-400 text-yellow-900 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">1</span>
                   <span>24時間いつでも送信OK</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">⭐</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-yellow-400 text-yellow-900 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">2</span>
                   <span>3分で基本情報を入力完了</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">⭐</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-yellow-400 text-yellow-900 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">3</span>
                   <span>自動ヒアリング後、担当者からご連絡</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">⭐</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-yellow-400 text-yellow-900 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">4</span>
                   <span>しつこい営業は一切いたしません</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-yellow-300 mr-3 mt-1">⭐</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="bg-yellow-400 text-yellow-900 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">5</span>
                   <span>相談だけでも大歓迎です</span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Urgency */}
           <div className="bg-red-600 rounded-xl p-6 max-w-2xl mx-auto mb-8">
-            <h3 className="text-xl font-bold mb-2">⚠️ お急ぎください</h3>
+            <h3 className="text-xl font-bold mb-2">
+              <span className="bg-white text-red-600 px-2 py-1 rounded text-sm mr-2">重要</span>
+              お急ぎください
+            </h3>
             <p className="text-red-100">
               モニター価格1万円は先着3事務所限定です<br />
               4事務所目以降は通常価格5万円となります

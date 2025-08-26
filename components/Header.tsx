@@ -79,11 +79,12 @@ const Header = () => {
             ))}
             <Link
               href="https://lin.ee/jlYnS13V"
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 text-sm"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 text-sm flex items-center"
               target="_blank"
               rel="noopener noreferrer"
             >
-              💬 無料相談
+              <span className="bg-white text-green-600 px-1 py-0.5 rounded text-xs mr-2 font-bold">LINE</span>
+              無料相談
             </Link>
           </nav>
 
@@ -141,7 +142,8 @@ const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                💬 無料相談
+                <span className="bg-white text-green-600 px-1 py-0.5 rounded text-xs mr-2 font-bold">LINE</span>
+                無料相談
               </Link>
             </div>
           </nav>
