@@ -30,7 +30,7 @@ const Footer = () => {
                   実績豊富なプロフェッショナルチーム
                 </p>
                 <a 
-                  href="#" 
+                  href="https://gosset-lp.vercel.app/" 
                   className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
