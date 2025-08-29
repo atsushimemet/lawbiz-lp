@@ -1,4 +1,21 @@
+'use client'
+
 import React from 'react'
+
+// Google Ads コンバージョン追跡関数
+declare global {
+  interface Window {
+    gtag: (command: string, ...args: any[]) => void
+  }
+}
+
+const handleConversion = () => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-617366745/sCN4CI2u6I0bENmJsaYC'
+    })
+  }
+}
 
 const PricingSection = () => {
   return (
@@ -116,6 +133,7 @@ const PricingSection = () => {
                   className="btn-primary w-full text-lg py-4 bg-red-600 hover:bg-red-700 mb-4 inline-block"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleConversion}
                 >
                   今すぐ申し込む
                 </a>

@@ -3,6 +3,21 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
+// Google Ads コンバージョン追跡関数
+declare global {
+  interface Window {
+    gtag: (command: string, ...args: any[]) => void
+  }
+}
+
+const handleConversion = () => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-617366745/sCN4CI2u6I0bENmJsaYC'
+    })
+  }
+}
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -82,6 +97,7 @@ const Header = () => {
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 text-sm flex items-center"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleConversion}
             >
               <span className="bg-white text-green-600 px-1 py-0.5 rounded text-xs mr-2 font-bold">LINE</span>
               無料相談
@@ -141,6 +157,7 @@ const Header = () => {
                 className="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleConversion}
               >
                 <span className="bg-white text-green-600 px-1 py-0.5 rounded text-xs mr-2 font-bold">LINE</span>
                 無料相談
