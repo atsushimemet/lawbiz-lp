@@ -1,6 +1,23 @@
 'use client'
 
+'use client'
+
 import React, { useState } from 'react'
+
+// Google Ads コンバージョン追跡関数
+declare global {
+  interface Window {
+    gtag: (command: string, ...args: any[]) => void
+  }
+}
+
+const handleConversion = () => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-617366745/sCN4CI2u6I0bENmJsaYC'
+    })
+  }
+}
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
@@ -98,6 +115,7 @@ const FAQSection = () => {
               className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleConversion}
             >
               <span className="mr-2">💬</span>
               LINEで質問する
