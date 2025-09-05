@@ -51,7 +51,7 @@ const HeroSection = () => {
 
           {/* Target Audience */}
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            対象：<span className="font-semibold text-gray-900">全国対応</span>の税理士・司法書士事務所<br />
+            対象：<span className="font-semibold text-gray-900">全国</span>の税理士・司法書士事務所<br />
             <span className="text-lg">オンライン完結・訪問対応なし</span>
           </p>
 
