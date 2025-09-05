@@ -28,7 +28,7 @@ const Footer = () => {
           
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              宇都宮線沿線の士業事務所向けに、<br className="sm:hidden" />
+              全国の士業事務所向けに、<br className="sm:hidden" />
               <span className="font-semibold text-white">「スマホ対応HP + LINE導線 + Google広告」</span><br />
               をワンセットで提供するデジタルマーケティングサービスです。
             </p>
@@ -62,8 +62,8 @@ const Footer = () => {
               <div>
                 <h4 className="font-semibold text-primary-400 mb-3">対象エリア</h4>
                 <p className="text-gray-400 text-sm">
-                  宇都宮線沿線<br />
-                  （オンライン対応）
+                  全国対応<br />
+                  （オンライン完結）
                 </p>
               </div>
               <div>
