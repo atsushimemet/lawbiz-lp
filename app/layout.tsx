@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     ? `https://${process.env.VERCEL_URL}` 
     : 'http://localhost:3000'
   ),
-  title: '士業専門ホームページ制作 | 宇都宮線沿線限定 1万円プラン',
-  description: '税理士・司法書士事務所専門のホームページ制作サービス。スマホ対応HP + LINE導線 + Google広告運用を1万円で提供。宇都宮線沿線の士業事務所限定、先着3事務所のモニターキャンペーン実施中。',
-  keywords: '士業,税理士,司法書士,ホームページ制作,LINE導線,Google広告,宇都宮線,格安,モニター',
+  title: '士業専門ホームページ制作 | 1万円プラン',
+  description: '税理士・司法書士事務所専門のホームページ制作サービス。スマホ対応HP + LINE導線 + Google広告運用を1万円で提供。先着3事務所のモニターキャンペーン実施中。',
+  keywords: '士業,税理士,司法書士,ホームページ制作,LINE導線,Google広告,格安,モニター',
   openGraph: {
     title: '士業専門ホームページ制作 | 1万円プラン',
-    description: 'スマホ対応HP + LINE導線 + Google広告を1万円で。宇都宮線沿線の士業事務所限定。',
+    description: 'スマホ対応HP + LINE導線 + Google広告を1万円で。士業事務所向け特別プラン。',
     type: 'website',
   },
   robots: 'index, follow',
